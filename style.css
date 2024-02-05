@@ -1,13 +1,17 @@
 h1 {
-   color: rgb(21, 95, 47);
+   color: rgb(255, 255, 255);
    font-size: 60px;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
   
 }
 
+body {
+   background-color: #000000;
+}
+
 p { 
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: green;
+    color: #0f4caf;
    
 }
