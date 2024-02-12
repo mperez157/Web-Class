@@ -7,7 +7,13 @@ body {
    
    h1 {
     color: white;
+    
    }
+
+   img {
+    float: left;
+  }
+
 
    /* generic styling for the quote */
    #text::before {
@@ -21,8 +27,9 @@ body {
     font-size: 20px;
    }
    
-   /* index card styling */
+   /* index card styling 4card1 */
    .card{
+    align-items: center;
     font-family: Courier, monospace;
     background-color: white;
     background: repeating-linear-gradient(white, white 25px, #9198e5 26px, #9198e5 27px);
@@ -30,9 +37,8 @@ body {
     height: 300px;
     width: 500px;
     padding: 0;
-    margin-top: 80px;
-    
-    margin-right: 15px;
+    margin-top: 90px;
+    margin-right: 300px;
    }
    .card header {
     background: linear-gradient(white, white 33px, pink 35px, pink 36px);
@@ -42,10 +48,77 @@ body {
     position: relative;
     left: 10px;
     top: 5px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
    }
    .card-text {
+    position: relative;
+    top: 30px;
+    font-size: 18px;
+    margin: 0 20px;
+    line-height: 27px;
+   }
+   
+
+
+   /* index card styling 4card2*/
+   .card2{
+    font-family: Courier, monospace;
+    background-color: white;
+    background: repeating-linear-gradient(white, white 25px, #9198e5 26px, #9198e5 27px);
+    background-position-y: 34px;
+    height: 300px;
+    width: 500px;
+    padding: 0;
+    margin-top: 10px;
+    
+    margin-right: 15px;
+   }
+   .card2 header {
+    background: linear-gradient(white, white 33px, pink 35px, pink 36px);
+    height: 36px;
+   }
+   .card2-title {
+    position: relative;
+    left: 10px;
+    top: 5px;
+    font-size: 25px;
+    font-weight: bold;
+   }
+   .card2-text {
+    position: relative;
+    top: 30px;
+    font-size: 18px;
+    margin: 0 20px;
+    line-height: 27px;
+   }
+   
+
+   /* index card styling 4card3 */
+   .card3{
+    font-family: Courier, monospace;
+    background-color: white;
+    background: repeating-linear-gradient(white, white 25px, #9198e5 26px, #9198e5 27px);
+    background-position-y: 34px;
+    height: 300px;
+    width: 500px;
+    padding: 0;
+    margin-top: 10px;
+    
+    margin-right: 15px;
+   }
+   .card3 header {
+    background: linear-gradient(white, white 33px, pink 35px, pink 36px);
+    height: 36px;
+   }
+   .card3-title {
+    position: relative;
+    left: 10px;
+    top: 5px;
+    font-size: 25px;
+    font-weight: bold;
+   }
+   .card3-text {
     position: relative;
     top: 30px;
     font-size: 18px;
