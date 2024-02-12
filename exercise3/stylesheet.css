@@ -1,50 +1,48 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 body {
-    background-color: #555;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-   }
+  background-color: rgba(220, 15, 15, 0.1);
+}
+
+/* styling paper */
+#paper {
+  width: 600px;
+  height: 700px;
+  position: relative;
+  margin: 20px auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px #888;
+}
+
+/* styling red vertical line */
+#paper::before {
+  content: '';
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  background-color: rgba(255,0,0,0.6);
+}
+
+/* styling blue horizontal lines */
+#pattern {
+  height: 100%;
+  background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
+}
+
+/* styling text content */
+#content {
+  padding-top: 6px;
+  padding-left: 56px;
+  padding-right: 16px;
+  line-height: 25px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 19px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
    
-   /* generic styling for the quote */
-   #text::before {
-    content: "\"";
-   }
-   #text::after {
-    content: "\"";
-   }
-   #title::after {
-    content: " said:";
-    font-size: 20px;
-   }
    
-   /* Styling specific to an index card */
-   .card{
-    font-family: Courier, monospace;
-    background-color: white;
-    background: repeating-linear-gradient(white, white 25px, #9198e5 26px, #9198e5 27px);
-    background-position-y: 34px;
-    height: 300px;
-    width: 500px;
-    padding: 0;
-    margin-top: 50px;
-    
-    margin-right: 15px;
-   }
-   .card header {
-    background: linear-gradient(white, white 33px, pink 35px, pink 36px);
-    height: 36px;
-   }
-   .card-title {
-    position: relative;
-    left: 10px;
-    top: 8px;
-    font-size: 30px;
-    font-weight: bold;
-   }
-   .card-text {
-    position: relative;
-    top: 30px;
-    font-size: 18px;
-    margin: 0 20px;
-    line-height: 27px;
-   }
