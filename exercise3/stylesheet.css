@@ -1,13 +1,14 @@
 body {
     background-color: #0c1747;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
    }
    
-   h1 {
+
+   .sticky {
+
     color: white;
-    
+    text-align: center;
+    font-size: 50px;
+
    }
 
    img {
@@ -26,8 +27,15 @@ body {
     content: " said:";
     font-size: 20px;
    }
-   
+   .cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   }
    /* index card styling 4card1 */
+   .first {
+    margin: 0 auto;
+   }
    .card{
     align-items: center;
     font-family: Courier, monospace;
@@ -38,7 +46,6 @@ body {
     width: 500px;
     padding: 0;
     margin-top: 90px;
-    margin-right: 300px;
    }
    .card header {
     background: linear-gradient(white, white 33px, pink 35px, pink 36px);
@@ -126,4 +133,13 @@ body {
     line-height: 27px;
    }
    
+   h2 {
+
+    color: white;
+
+   }
+
+   .gifs {
+        
+  }
    
