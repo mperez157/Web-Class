@@ -10,20 +10,21 @@ body {
 
 nav {
     width: 100%;
-    background: red;
+    background: rgb(175, 42, 42);
     overflow: hidden;
-    position: fixed;
+    position: sticky;
     top: 0;
 }
 
 ul {
     padding: 0;
-    margin: 0;
+    margin: 0 auto 0 auto;
+    width: 100%;
     list-style: none;
 }
 
 li {
-    float: left;
+    display: inline-block;
 }
 
 a {
@@ -38,5 +39,62 @@ a {
 
 #section1 {
     height: 700px;
-    background-image: pr.png;
+    background-image: url(images/pr.png);
+    display: inline-block;
+    width: 100%;
+}
+
+#section2 {
+    height: 700px;
+    background-color: rgb(175, 42, 42);
+    display: inline-block;
+    width: 100%;
+}
+
+#section3 {
+    height: 700px;
+    background-color: black;
+    display: inline-block;
+    width: 100%;
+}
+
+#section4 {
+    height: 700px;
+    background-color: white;
+    display: inline-block;
+    width: 100%;
+}
+
+#section5 {
+    height: 700px;
+    background-color: rgb(175, 42, 42);
+    display: inline-block;
+    width: 100%;
+}
+
+h1 {
+    margin: 100px;
+    text-align: center;
+    padding: 0;
+    color: rgb(175, 42, 42);
+    font-size: 80px;
+    text-shadow: 1px 1px black;
+}
+
+h3 {
+    margin: 100px;
+    text-align: center;
+    padding: 0px;
+    color: white;
+    font-size: 40px;
+    text-shadow: 1px 1px 6px black;
+}
+
+h4 {
+    margin: 100px;
+    text-align: center;
+    padding: 0px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px 1px 6px black;
 }
