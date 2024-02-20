@@ -8,7 +8,7 @@
 
     width: 100%;
     height: 100vh;
-    background-image: url(images/book.jpg);
+    background-image: url(images/pr.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -26,63 +26,38 @@
 }
 
 h2 {
-    color: white;
-    font-family: 'Kalnia', serif;
+    color: #E92228;
+    font-family: 'Times New Roman', Times, serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-variant-numeric: 
         "wdth" 100;
-    font-size: 40px;
+    font-size: 45px;
     line-height: 1.5;
 }
 h3 {
-    color: white;
-    font-family: 'Inclusive Sans', sans-serif;
+    color: #E92228;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: 400px;
     font-style: normal;
-    font-size: 24px;
+    font-size: 30px;
     margin-top: 20px;
 }
 
-.redmoon {
-    background-image: url(images/moon-red.png);
-    background-repeat: no-repeat;
-    width: 600px;
-    height: 600px;
-    background-size: contain;
-    position: absolute;
-    left: -100px;
-    bottom: -100px;
-    z-index: 999;
-}
-
-.bluemoon {
-    background-image: url(images/moon-blue.png);
-    background-repeat: no-repeat;
-    width: 800px;
-    height: 800px;
-    background-size: contain;
-    position: absolute;
-    right: -200px;
-    top: -100px;
-}
-
-.graymoon {
-    background-image: url(images/moon-bw.png);
-    background-repeat: no-repeat;
-    width: 400px;
-    height: 400px;
-    background-size: contain;
-    position: absolute;
-    right: -50px;
-    bottom: -50px;
+.middle {
+    position: relative;
+    top: -10px;
+    left: 480px;
+    z-index: 1000;
+    width: 60%;
+    margin: 100px 50px 100px -10px;
 }
 
 .flex-area {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-image: url(images/galaxy.jpg);
+    background-color: white;
     background-size: cover;
     background-position: bottom;
 }
@@ -99,30 +74,29 @@ ul {
 
 li {
 
-    font-family: 'Inclusive Sans', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 400px;
     font-style: normal;
     font-size: 20px;
-    border-bottom: 1px dotted gray;
-    color: white;
+    color: #E92228;
     padding: 10px 0px 10px 0px;
 }
 
 h4 {
-    font-family: 'Kalnia', serif;
+    font-family: 'Times New Roman', Times, serif;
     font-optical-sizing: auto;
     font-weight: 400px;
     font-style: normal;
     font-variant-numeric: 
         "wdth" 100;
     font-size: 30px;
-    color: yellowgreen;
+    color: #E92228;
     margin-bottom: 40px;
 }
 
 span {
     font-size: 15px;
-    color: gray;
+    color: white;
     text-transform: uppercase;
     display: block;
     margin-top: 5px;
