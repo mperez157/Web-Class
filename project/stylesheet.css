@@ -9,18 +9,17 @@ body {
 }
 
 nav {
-    width: 100%;
     background: rgb(175, 42, 42);
-    overflow: hidden;
     position: sticky;
     top: 0;
+    text-align: center;
+    width: 100%;
 }
 
 ul {
-    padding: 0;
-    margin: 0 auto 0 auto;
-    width: 100%;
     list-style: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 li {
@@ -28,13 +27,14 @@ li {
 }
 
 a {
-    padding: 20px;
     width: 100px;
+    padding: 20px;
     display: block;
     text-decoration: none;
     color: black;
     text-transform: uppercase;
     font-weight: bold;
+    text-shadow: 5px;
 }
 
 #section1 {
@@ -45,31 +45,55 @@ a {
 }
 
 #section2 {
-    height: 700px;
-    background-color: rgb(175, 42, 42);
+    background-color: black;
     display: inline-block;
     width: 100%;
 }
 
 #section3 {
-    height: 700px;
-    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-size: cover;
+    background-position: bottom;
+    background-color: rgb(175, 42, 42);
     display: inline-block;
-    width: 100%;
+    color: white;
+}
+
+.themes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(175, 42, 42);
+    
+}
+
+.column {
+    width: 33%;
+    margin: 100px 50px 100px 50px;
 }
 
 #section4 {
     height: 700px;
     background-color: white;
     display: inline-block;
+    max-width: 1200px;
     width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+.images {
+
+}
+
+
 #section5 {
-    height: 700px;
-    background-color: rgb(175, 42, 42);
+    background-color: black;
     display: inline-block;
     width: 100%;
+    padding: 20px;
 }
 
 h1 {
@@ -78,23 +102,85 @@ h1 {
     padding: 0;
     color: rgb(175, 42, 42);
     font-size: 80px;
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px 3px black;
 }
 
 h3 {
-    margin: 100px;
+    margin: 40px;
     text-align: center;
-    padding: 0px;
+    padding: -50px;
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     text-shadow: 1px 1px 6px black;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h4 {
-    margin: 100px;
     text-align: center;
     padding: 0px;
     color: white;
-    font-size: 20px;
-    text-shadow: 1px 1px 6px black;
+    font-size: 25px;
+    text-shadow: 1px 1px 10px black;
+    font-family: 'Times New Roman', Times, serif;
 }
+
+.book-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    width: 80%;
+    margin: 0 auto;
+}
+
+.book {
+    width: 50%;
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.booktext1 {
+    font-size: 24px;
+    width: 80%;
+    padding: 70px;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.author-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    width: 80%;
+    margin: 0 auto;
+}
+
+.author {
+    width: 50%;
+}
+
+.author img {
+    width: 100%;
+    height: auto;
+    margin-top: 130px;
+    margin-bottom: 50px;
+}
+
+.authortext1 {
+    font-size: 24px;
+    width: 80%;
+    padding: 65px;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, serif;
+}
+
