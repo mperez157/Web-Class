@@ -1,112 +1,186 @@
-* {
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* it means that paddings and borders are included in height and width values */
+    font-family: 'Times New Roman', Times, serif;
 }
 
-#opener {
-
+nav {
+    background: rgb(175, 42, 42);
+    position: sticky;
+    top: 0;
+    text-align: center;
     width: 100%;
-    height: 100vh;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    width: 100px;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 5px;
+}
+
+#section1 {
+    height: 700px;
     background-image: url(images/pr.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    overflow: hidden;
+    display: inline-block;
+    width: 100%;
 }
 
-.quote {
-    position: relative;
-    top: 100px;
-    left: 100px;
-    z-index: 1000;
-    width: 60%;
-
+#section2 {
+    background-color: black;
+    display: inline-block;
+    width: 100%;
 }
 
-h2 {
-    color: #E92228;
-    font-family: 'Times New Roman', Times, serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variant-numeric: 
-        "wdth" 100;
-    font-size: 45px;
-    line-height: 1.5;
-}
-h3 {
-    color: #E92228;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 400px;
-    font-style: normal;
-    font-size: 30px;
-    margin-top: 20px;
-}
-
-.middle {
-    position: relative;
-    top: -10px;
-    left: 480px;
-    z-index: 1000;
-    width: 60%;
-    margin: 100px 50px 100px -10px;
-}
-
-.flex-area {
+#section3 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: white;
     background-size: cover;
     background-position: bottom;
+    background-color: rgb(175, 42, 42);
+    display: inline-block;
+    color: white;
+}
+
+.themes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(175, 42, 42);
+    
 }
 
 .column {
     width: 33%;
     margin: 100px 50px 100px 50px;
+}
+
+#section4 {
+    height: 700px;
+    background-color: white;
+    display: inline-block;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.images {
 
 }
 
-ul {
-    list-style-type: none;
+
+#section5 {
+    background-color: black;
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
 }
 
-li {
+h1 {
+    margin: 100px;
+    text-align: center;
+    padding: 0;
+    color: rgb(175, 42, 42);
+    font-size: 80px;
+    text-shadow: 1px 1px 3px black;
+}
 
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400px;
-    font-style: normal;
-    font-size: 20px;
-    color: #E92228;
-    padding: 10px 0px 10px 0px;
+h3 {
+    margin: 40px;
+    text-align: center;
+    padding: -50px;
+    color: white;
+    font-size: 30px;
+    text-shadow: 1px 1px 6px black;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h4 {
-    font-family: 'Times New Roman', Times, serif;
-    font-optical-sizing: auto;
-    font-weight: 400px;
-    font-style: normal;
-    font-variant-numeric: 
-        "wdth" 100;
-    font-size: 30px;
-    color: #E92228;
-    margin-bottom: 40px;
-}
-
-span {
-    font-size: 15px;
+    text-align: center;
+    padding: 0px;
     color: white;
-    text-transform: uppercase;
-    display: block;
-    margin-top: 5px;
+    font-size: 25px;
+    text-shadow: 1px 1px 10px black;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-iframe {
-    margin: 100px 50px 100px 50px;
+.book-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    width: 80%;
+    margin: 0 auto;
 }
 
-#video-section {
-    background-image: none;
-    background-color: black;
+.book {
+    width: 50%;
 }
+
+.book img {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.booktext1 {
+    font-size: 24px;
+    width: 80%;
+    padding: 70px;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.author-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    width: 80%;
+    margin: 0 auto;
+}
+
+.author {
+    width: 50%;
+}
+
+.author img {
+    width: 100%;
+    height: auto;
+    margin-top: 130px;
+    margin-bottom: 50px;
+}
+
+.authortext1 {
+    font-size: 24px;
+    width: 80%;
+    padding: 65px;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, serif;
+}
+
