@@ -3,14 +3,67 @@ html {
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffffff; 
+  }
+  
+  /* Media query for MacBook screen sizes */
+  @media only screen and (min-width: 880px) {
+    body {
+      background-color: #6fad7d; 
+  }
+}
+  
+  /* Media query for smaller screen sizes */
+  @media only screen and (max-width: 979px) {
+    body {
+      background-color: #d99a52; 
+    }
+  }
+  
+  
+
+
+h1 {
+    margin: 80px;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: medium;;
+    -webkit-text-stroke: 1px black;
+    font-size: 60px;
 }
 
-#section1 {
-    height: 700px;
-    display: inline-block;
-    width: 100%;
-    background-color: #232F3E;
+h2 {
+    margin: 100px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: "Oswald", sans-serif;
+    -webkit-text-stroke: 1px black;
+}
+
+h4 {
+    margin: 100px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 35px;
+    font-family: "Oswald", sans-serif;
+    -webkit-text-stroke: 1px black;
+}
+
+p {
+  margin: 100px;
+    text-align: center;
+    color: #e9e7e7;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
