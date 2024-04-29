@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(24, 180, 24)
+  }
+
+  h1 {
+    color: rgb(24, 180, 24);
+  }
+
+  p {
+    margin: 25px 50px 75px 100px;
+  }
