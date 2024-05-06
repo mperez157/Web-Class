@@ -1,0 +1,829 @@
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+#intro {
+    background-color: rgb(245, 243, 239);
+    background-position: center;
+    background-size: cover;
+    width: 100;
+    height: 100vh;
+}
+
+#title {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 5%; 
+}
+
+h1 {
+    color: black;
+    font-family: "Roboto Mono", monospace;
+    font-size: 80px;
+    font-weight: 300;
+    padding-bottom: 10px;
+    letter-spacing: -1px;
+    word-spacing: -5px;
+}
+
+h2 {
+    color: #ba1b1b;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+p {
+    color: #fffcf6;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    }
+    
+.div1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 35px;
+    }
+
+    .div2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+    .div3 { 
+    grid-area: 1 / 3 / 2 / 4; 
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 35px;
+    }
+
+.pentax {
+    height: auto;
+    width: 100%;
+}
+
+.polaroid {
+    height: auto;
+    width: 100%;
+}
+
+.zenza {
+    height: auto;
+    width: 100%;
+}
+
+.pentax {
+    transition: transform 0.5s ease; 
+}
+
+.pentax:hover {
+    transform: scale(1.2); 
+}
+
+.polaroid {
+    transition: transform 0.5s ease; 
+}
+
+.polaroid:hover {
+    transform: scale(1.2); 
+}
+
+.zenza {
+    transition: transform 0.5s ease; 
+}
+
+.zenza:hover {
+    transform: scale(1.2); 
+}
+
+/*PAGE1 PENTAX*/
+#pentax {
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#pentax .home-button {
+    padding-top: 3px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-decoration: none; 
+    color: rgb(255, 252, 246)
+}
+
+#pentax .pentax2 {
+    padding-top: 3px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 40px;
+    font-weight: 300;
+    padding-bottom: 10px;
+    letter-spacing: -1px;
+    word-spacing: -5px;
+    padding-bottom: 10px;
+    text-decoration: none; 
+    color: rgb(255, 252, 246)
+}
+
+#pentax .home-button:hover {
+    color: #ba1b1b; 
+}
+
+#pentax .pentax2:hover {
+    color: #ba1b1b; 
+}
+
+#pentax .parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px; 
+    height: 100%; 
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+#pentax .parent > div {
+    position: relative; /* Ensure proper positioning of images */
+    overflow: hidden; /* Hide any image overflow */
+    height: 0; /* Set height to 0 to allow images to fill the space */
+    padding-bottom: 100%; /* Maintain aspect ratio of grid items */
+}
+
+#pentax .parent > div img {
+    position: absolute; /* Position images absolutely within their parent div */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure image covers the entire grid item horizontally */
+    height: 100%; /* Ensure image covers the entire grid item vertically */
+    object-fit: cover; /* Maintain aspect ratio while covering the entire space */
+}
+
+#pentax .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pentax .parent > div:hover .overlay {
+    opacity: 1;
+}
+
+#pentax .text {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    text-transform: uppercase;
+}
+
+    
+#pentax    .div1 { 
+        grid-area: 1 / 1 / 2 / 2; 
+        height: auto;
+        width: 100%;
+    }
+
+#pentax    .div2 { 
+        grid-area: 1 / 2 / 2 / 3; 
+        height: auto;
+        width: 100%;
+    }
+
+#pentax    .div3 { 
+        grid-area: 1 / 3 / 2 / 4; 
+        height: auto;
+        width: 100%;
+    }
+
+#pentax    .div4 { 
+        grid-area: 2 / 1 / 3 / 2; 
+        height: auto;
+        width: 100%;
+    }
+
+#pentax    .div5 { 
+        grid-area: 2 / 2 / 3 / 3; 
+        height: auto;
+        width: 100%;
+    }
+
+#pentax    .div6 { 
+        grid-area: 2 / 3 / 3 / 4; 
+        height: auto;
+        width: 100%;
+    }
+
+#pentax    .div7 { 
+        grid-area: 3 / 1 / 4 / 2; 
+        height: auto;
+        width: 100%;
+    }
+
+#pentax    .div8 { 
+        grid-area: 3 / 2 / 4 / 3; 
+        height: auto;
+        width: 100%;
+    }
+
+#pentax    .div9 { 
+        grid-area: 3 / 3 / 4 / 4; 
+        height: auto;
+        width: 100%;
+    }
+
+#pentax    .div10 { 
+        grid-area: 4 / 1 / 5 / 2; 
+        height: auto;
+        width: 100%;
+    }
+
+#pentax    .div11 { 
+        grid-area: 4 / 2 / 5 / 3; 
+        height: auto;
+        width: 100%;
+    }
+
+#pentax    .div12 { 
+        grid-area: 4 / 3 / 5 / 4; 
+        height: auto;
+        width: 100%;
+    }
+
+/*PENTAX2*/ 
+#pentax2 {
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#pentax2 body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#pentax2 .container {
+    display: flex;
+    height: 100vh;
+}
+
+#pentax2 .left-div {
+    width: 30%;
+    background-color: black;
+    padding: 20px;
+}
+
+#pentax2 .right-div {
+    width: 70%;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pentax2 .right-div img {
+    max-width: 65%;
+    height: 65%;
+}
+
+#pentax2 h1 {
+    color: #fffcf6;
+    font-family: "Roboto Mono", monospace;
+    font-size: 32px;
+    font-weight: 300;
+    align-items: left;
+}
+
+#pentax2 h2 {
+    font-size: 18px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    color: rgb(255, 252, 246);
+    align-items: left;
+}
+
+#pentax2 p {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 252, 246);
+    padding-top: 10px;
+}
+
+#pentax2 .home-button {
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-decoration: none; 
+    color: rgb(255, 252, 246);
+    align-items: left;
+}
+
+#pentax2 .home-button:hover {
+    color: #ba1b1b; /* Change color to red on hover */
+}
+
+#pentax2 .pentax {
+    color: #fffcf6;
+    font-family: "Roboto Mono", monospace;
+    font-size: 32px;
+    font-weight: 300;
+    align-items: left;
+    text-decoration: none; 
+}
+
+#pentax2 .pentax:hover {
+    color: #ba1b1b; 
+}
+
+#pentax2 .link {
+    font-size: 18px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    color: rgb(255, 252, 246);
+    align-items: left;
+    text-decoration: none;
+}
+
+#pentax2 .link:hover {
+    color: #ba1b1b; /* Change color to red on hover */
+}
+
+/*POLAROID*/ 
+#polaroid {
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#polaroid .home-button {
+    padding-top: 3px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-decoration: none; 
+    color: rgb(255, 252, 246)
+}
+
+#polaroid .polaroid2 {
+    padding-top: 3px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 40px;
+    font-weight: 300;
+    padding-bottom: 10px;
+    letter-spacing: -1px;
+    word-spacing: -5px;
+    text-decoration: none; 
+    color: rgb(255, 252, 246)
+}
+
+#polaroid .home-button:hover {
+    color: #ba1b1b; 
+}
+
+#polaroid .polaroid2:hover {
+    color: #ba1b1b; 
+}
+
+#polaroid img {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+}
+
+.momma {
+    width: 18%;
+    left: 10%;
+    top: 13%;
+    transform: rotate(8deg); 
+}
+
+.dj {
+    width: 18%;
+    left: 70%;
+    top: 50%;
+}
+
+.kenzie {
+    width: 18%;
+    left: 30%;
+    top: 25%;
+    transform: rotate(-10deg); 
+}
+
+.room {
+    width: 18%;
+    left: 68%;
+    top: 11%;
+    transform: rotate(-30deg); 
+}
+
+.nyc {
+    width: 18%;
+    left: 27%;
+    top: 55%;
+    transform: rotate(50deg); 
+}
+
+.canada {
+    width: 18%;
+    left: 50%;
+    top: 54%;
+    transform: rotate(20deg); 
+}
+
+.davi {
+    width: 18%;
+    left: 11%;
+    top: 50%;
+    transform: rotate(-5deg);
+}
+
+.mila {
+    width: 18%;
+    left: 49%;
+    top: 22%;
+}
+
+#polaroid2 {
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#polaroid2 body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#polaroid2 .container {
+    display: flex;
+    height: 100vh;
+}
+
+#polaroid2 .left-div {
+    width: 30%;
+    background-color: black;
+    padding: 20px;
+}
+
+#polaroid2 .right-div {
+    width: 70%;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#polaroid2 .right-div img {
+    max-width: 65%;
+    height: 65%;
+}
+
+#polaroid2 h1 {
+    color: #fffcf6;
+    font-family: "Roboto Mono", monospace;
+    font-size: 32px;
+    font-weight: 300;
+    align-items: left;
+}
+
+#polaroid2 h2 {
+    font-size: 18px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    color: rgb(255, 252, 246);
+    align-items: left;
+}
+
+#polaroid2 p {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 252, 246);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#polaroid2 .home-button{
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-decoration: none; 
+    color: rgb(255, 252, 246);
+    align-items: left;
+}
+
+#polaroid2 .link {
+    font-size: 18px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    color: rgb(255, 252, 246);
+    align-items: left;
+    text-decoration: none;
+}
+
+#polaroid2 .home-button:hover {
+    color: #ba1b1b; /* Change color to red on hover */
+}
+
+#polaroid2 .link:hover {
+    color: #ba1b1b; /* Change color to red on hover */
+}
+
+#polaroid2 .polaroid {
+    color: #fffcf6;
+    font-family: "Roboto Mono", monospace;
+    font-size: 32px;
+    font-weight: 300;
+    align-items: left;
+    text-decoration: none; 
+}
+
+#polaroid2 .polaroid:hover {
+    color: #ba1b1b; 
+}
+
+/*ZENZA*/
+#zenza {
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#zenza .body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#zenza .home-button {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-decoration: none; 
+    color: rgb(255, 252, 246);
+}
+
+#zenza .zenza2 {
+    padding-top: 3px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 40px;
+    font-weight: 300;
+    padding-bottom: 10px;
+    letter-spacing: -1px;
+    word-spacing: -5px;
+    text-decoration: none; 
+    color: rgb(255, 252, 246);
+}
+
+#zenza .home-button:hover {
+    color: #ba1b1b; 
+}
+
+#zenza .zenza2:hover {
+    color: #ba1b1b; 
+}
+
+#zenza .section {
+    margin: 0;
+    padding: 0;
+    height: 80%; 
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+}
+
+#zenza .slider {
+    width: 80%;
+    height: 80%;
+    max-width: 800px; 
+    max-height: 500px; 
+    overflow: hidden;
+
+}
+
+#zenza .slide {
+    width: 500%; 
+    height: 100%; 
+    display: flex;
+}
+
+#zenza .slide input {
+    display: none;
+}
+
+#zenza .st {
+    width: 20%;
+    transition: 2s;
+}
+
+#zenza .st img {
+    width: 100%; 
+    height: 100%; 
+}
+
+#zenza .nav-m {
+    position: absolute;
+    width: 80%; 
+    max-width: 800px; 
+    margin-top: -40px;
+    justify-content: center;
+    display: flex;
+}
+
+#zenza .m-btn {
+    border: 2px solid #fffcf6;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#zenza .m-btn:not(:last-child) {
+    margin-right: 30px;
+}
+
+#zenza .m-btn:hover {
+    background-color: #fffcf6;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+#radio5:checked ~ .first {
+    margin-left: -80%;
+}
+
+/*ZENZA2*/ 
+#zenza2 {
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#zenza2 body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#zenza2 .container {
+    display: flex;
+    height: 100vh;
+}
+
+#zenza2 .left-div {
+    width: 30%;
+    background-color: black;
+    padding: 20px;
+}
+
+#zenza2 .right-div {
+    width: 70%;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#zenza2 .right-div img {
+    max-width: 65%;
+    height: 65%;
+}
+
+#zenza2 h1 {
+    color: #fffcf6;
+    font-family: "Roboto Mono", monospace;
+    font-size: 32px;
+    font-weight: 300;
+    align-items: left;
+}
+
+#zenza2 h2 {
+    font-size: 18px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    color: rgb(255, 252, 246);
+    align-items: left;
+    padding-top: 10px;
+}
+
+#zenza2 p {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 252, 246);
+    padding-top: 20px;
+}
+
+#zenza2 .home-button {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-decoration: none; 
+    color: rgb(255, 252, 246);
+    align-items: left;
+}
+
+#zenza2 .home-button:hover {
+    color: #ba1b1b; /* Change color to red on hover */
+}
+
+#zenza2 .zenza {
+    color: #fffcf6;
+    font-family: "Roboto Mono", monospace;
+    font-size: 28px;
+    font-weight: 300;
+    align-items: left;
+    text-decoration: none; 
+}
+
+#zenza2 .zenza:hover {
+    color: #ba1b1b; 
+}
+
+#zenza2 .link {
+    font-size: 18px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    color: rgb(255, 252, 246);
+    align-items: left;
+    text-decoration: none;
+}
+
+#zenza2 .home-button:hover {
+    color: #ba1b1b; /* Change color to red on hover */
+}
+
+#zenza2 .link:hover {
+    color: #ba1b1b; /* Change color to red on hover */
+}
