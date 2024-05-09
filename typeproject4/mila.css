@@ -1,0 +1,124 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 70px;
+}
+
+h2 {
+    color: #4d4c4c;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+}
+
+#left-side {
+width: 40%;
+background-color: #dedede;
+padding: 5%;
+}
+
+#title {
+    margin-bottom: 50px;
+}
+
+#right-side {
+    width: 60%;
+    background-color: #dedede;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+#options {
+    margin-bottom: 50px;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 87.5,
+    "YTLC" 500;
+    color: #4d4c4c;
+    text-transform: uppercase;
+}
+
+.poster {
+    width: 425px; 
+    height: 550px; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.poster img {
+    width: 800px; 
+    height: 900; 
+    max-width: none; 
+    max-height: none; 
+    position: relative;
+}
+
+
+.bg-color1, .bg-color2, .bg-color3, .bg-color4, .bg-shape1, .bg-shape2, .bg-shape3, .bg-shape4, .bg-text1, .bg-text2, .bg-text3, .bg-text4 {
+    display: none;
+}
+
+.color-show {
+    display: block;
+    position: absolute;
+    z-index: 10;
+}
+
+.shape-show {
+    display: block;
+    position: absolute;
+    z-index: 20;
+}
+
+.text-show {
+    display: block;
+    position: absolute;
+    z-index: 30;
+}
+
+
+/* Update the width of the left and right sides for responsiveness */
+@media only screen and (max-width: 768px) {
+    #left-side {
+      width: 100%; /* Occupy full width on smaller screens */
+    }
+  
+    #right-side {
+      width: 100%; /* Occupy full width on smaller screens */
+    }
+  }
+  
+  /* Maintain original width of left and right sides on larger screens */
+  @media only screen and (min-width: 769px) {
+    #left-side {
+      width: 40%; /* Original width of left side */
+    }
+  
+    #right-side {
+      width: 60%; /* Original width of right side */
+    }
+  }
+  
